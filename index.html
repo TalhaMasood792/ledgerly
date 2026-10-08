@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ledgerly</title>
+  <meta name="description" content="Ledgerly — B2B invoicing and accounts receivable. A static demo with role-based access, an audit log and AR analytics.">
+  <meta name="theme-color" content="#F6F7F5" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0C1311" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230B6E4F'/%3E%3Cpath d='M10 8v16h12' stroke='white' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M15 13h7M15 18h5' stroke='white' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="js/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="shell">
+    <aside class="sidebar" aria-label="Primary">
+      <a class="brand" href="#/dashboard" aria-label="Ledgerly home">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#0B6E4F"/><path d="M10 8v16h12" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 13h7M15 18h5" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></svg>
+        <span class="brand-name">Ledgerly<span class="brand-org">Northwind Studio</span></span>
+      </a>
+      <nav class="nav" id="side-nav" aria-label="Main navigation"></nav>
+      <div class="sidebar-foot">
+        <p>Demo data is stored in your browser.</p>
+        <button type="button" class="linklike" data-action="reset-demo">Reset demo data</button>
+      </div>
+    </aside>
+    <div class="main-col">
+      <header class="topbar">
+        <a class="brand" href="#/dashboard" aria-label="Ledgerly home">
+          <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#0B6E4F"/><path d="M10 8v16h12" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 13h7M15 18h5" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></svg>
+          <span class="brand-name">Ledgerly</span>
+        </a>
+        <div class="topbar-spacer"></div>
+        <div class="user-switch">
+          <label for="user-select">Signed in as</label>
+          <span class="avatar" id="user-avatar" aria-hidden="true"></span>
+          <select id="user-select" class="input" style="width:auto"></select>
+        </div>
+      </header>
+      <main id="main" tabindex="-1"></main>
+      <p class="demo-note">Demo data is stored in your browser. <button type="button" class="linklike" data-action="reset-demo">Reset demo data</button></p>
+    </div>
+  </div>
+  <nav class="tabbar" id="tab-nav" aria-label="Main navigation"></nav>
+  <div class="toasts" id="toasts" role="status" aria-live="polite" aria-atomic="false"></div>
+  <noscript><p style="padding:24px">Ledgerly needs JavaScript to run.</p></noscript>
+</body>
+</html>
